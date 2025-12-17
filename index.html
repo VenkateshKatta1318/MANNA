@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANNA | Protein-Packed Pleasure</title>
+    <meta name="description" content="MANNA - The healthy, protein-packed, dairy-free ice cream for fitness enthusiasts, students, and kids. Zero sugar, 100% pleasure.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+    <img src="Logo.svg" alt="MANNA Logo"></a>
+            <div class="nav-links">
+                <a href="#benefits">Benefits</a>
+                <a href="#audience">For Who?</a>
+                <a href="#flavors">Flavors</a>
+                <button class="btn nav-btn open-modal" data-flavor="">Get the Scoop</button>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <span class="tagline">Protein - Packed Pleasure</span>
+            <h1>The Ice Cream That <br>Loves You Back</h1>
+            <p>Zero Sugar. Dairy Free. 100% Guilt-Free. Indulge in the creamy taste of Manna without compromising your goals.</p>
+            <div class="hero-btns">
+                <a href="#flavors" class="btn primary-btn">Find Your Flavor</a>
+                <a href="#benefits" class="btn secondary-btn">Why Manna?</a>
+            </div>
+        </div>
+        <div class="hero-shape">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </header>
+
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2>Scoop of <span class="highlight">Health</span></h2>
+                <p>We took out the bad stuff and packed in the power.</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="icon-box"><i class="fas fa-dumbbell"></i></div>
+                    <h3>High Protein</h3>
+                    <p>20g of clean protein per pint to fuel your muscle recovery.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon-box"><i class="fas fa-leaf"></i></div>
+                    <h3>Dairy Free</h3>
+                    <p>100% plant-based creamy goodness. No lactose, no bloating.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon-box"><i class="fas fa-heart"></i></div>
+                    <h3>Zero Sugar</h3>
+                    <p>Sweetened naturally. No sugar crashes, just pure energy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="audience" class="audience">
+        <div class="container">
+            <div class="audience-wrapper">
+                <div class="audience-content">
+                    <h2>For Every Lifestyle</h2>
+                    <div class="audience-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h4>Students</h4>
+                            <p>Brain fuel for late-night study sessions. Stay sharp without the sugar crash.</p>
+                        </div>
+                    </div>
+                    <div class="audience-item">
+                        <i class="fas fa-running"></i>
+                        <div>
+                            <h4>Fitness Pros</h4>
+                            <p>The perfect post-workout cheat meal that actually fits your macros.</p>
+                        </div>
+                    </div>
+                    <div class="audience-item">
+                        <i class="fas fa-child"></i>
+                        <div>
+                            <h4>Kids & Parents</h4>
+                            <p>A treat mom approves of. All the fun, none of the cavities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="audience-visual">
+    <img src="audience2.jpeg" alt="Happy people enjoying MANNA ice cream" class="audience-img"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="flavors" class="flavors">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span class="highlight">Flavors</span></h2>
+                <p>Pick your poison (except it's actually healthy).</p>
+            </div>
+            <div class="flavors-grid">
+                <div class="flavor-card matcha">
+                    <div class="flavor-badge">Best Seller</div>
+                    <div class="flavor-img">🍵</div>
+                    <h3>Motcha Zen</h3>
+                    <p>Earth meets sweet in a creamy green dream.</p>
+                    <button class="btn card-btn open-modal" data-flavor="Matcha Zen">Order Now</button>
+                </div>
+                <div class="flavor-card choco">
+                    <div class="flavor-img">🍫</div>
+                    <h3>Double Choco</h3>
+                    <p>Rich cocoa with a heavy lift of protein.</p>
+                    <button class="btn card-btn open-modal" data-flavor="Double Choco">Order Now</button>
+                </div>
+                <div class="flavor-card vanilla">
+                    <div class="flavor-img">🍦</div>
+                    <h3>Vanilla Vibe</h3>
+                    <p>Classic, clean, and perfectly lean.</p>
+                    <button class="btn card-btn open-modal" data-flavor="Vanilla Vibe">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>MANNA.</h3>
+                <p>Protein-Packed Pleasure delivered to your door.</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="#benefits">Benefits</a>
+                <a href="#flavors">Flavors</a>
+                <a href="#">Our Story</a>
+            </div>
+            <div class="footer-col">
+                <h4>Stay Updated</h4>
+                <form class="newsletter" onsubmit="event.preventDefault(); alert('Subscribed!');">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit" class="btn">Join</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 MANNA Ice Cream. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="orderModal" class="modal-overlay">
+        <div class="modal-container">
+            <button class="modal-close">&times;</button>
+            
+            <div class="modal-header">
+                <h2>Get the Goods 🍦</h2>
+                <p>High protein, zero guilt. Coming right up!</p>
+            </div>
+
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" required placeholder="Ice Cream Lover">
+                </div>
+
+                <div class="form-group">
+                    <label for="flavor-select">Flavor</label>
+                    <select id="flavor-select">
+                        <option value="Matcha Zen">Matcha Zen 🍵</option>
+                        <option value="Double Choco">Double Choco 🍫</option>
+                        <option value="Vanilla Vibe">Vanilla Vibe 🍦</option>
+                        <option value="Variety Pack">Variety Pack (All 3)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">How many pints?</label>
+                    <input type="number" id="quantity" min="1" value="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Delivery Address</label>
+                    <textarea id="address" rows="2" placeholder="Where should we drop it?" required></textarea>
+                </div>
+
+                <button type="submit" class="btn primary-btn full-width">Place Order</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
