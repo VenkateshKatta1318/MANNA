@@ -578,3 +578,98 @@ footer {
         margin-bottom: 40px; /* Adds space between image and text on mobile */
     }
 }
+
+
+/* --- 404 Error Page Styles --- */
+.error-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--choco-brown); /* Different bg for drama */
+    background-image: radial-gradient(circle at center, #5d4532 0%, var(--choco-brown) 100%);
+    padding: 20px;
+    color: var(--pure-white);
+}
+
+.error-card {
+    background: var(--cream-white);
+    padding: 60px 40px;
+    border-radius: 30px;
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+    /* Reverse contrast: White card on Brown bg, with Green Shadow */
+    box-shadow: 15px 15px 0px var(--matcha-green);
+    position: relative;
+    border: 3px solid var(--choco-brown);
+}
+
+.error-card h1 {
+    color: var(--choco-brown);
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.error-code {
+    font-family: var(--font-head);
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--matcha-green);
+    opacity: 0.5;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+.error-card p {
+    color: var(--choco-brown);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.error-card .sub-text {
+    font-weight: 400;
+    font-size: 0.95rem;
+    opacity: 0.7;
+    margin-bottom: 30px;
+}
+
+/* --- The Melted Ice Cream Animation --- */
+.melted-icon {
+    position: relative;
+    height: 100px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.melted-icon i {
+    font-size: 5rem;
+    color: var(--matcha-green);
+    /* Rotate to look dropped */
+    transform: rotate(135deg); 
+    z-index: 2;
+    animation: wobble 3s ease-in-out infinite;
+}
+
+.puddle {
+    position: absolute;
+    bottom: 5px;
+    width: 80px;
+    height: 25px;
+    background-color: #CDE6A5; /* Lighter Matcha */
+    border-radius: 50%;
+    z-index: 1;
+    animation: expand 3s ease-in-out infinite;
+}
+
+/* 404 errorAnimations */
+@keyframes wobble {
+    0%, 100% { transform: rotate(135deg) translateY(0); }
+    50% { transform: rotate(145deg) translateY(-5px); }
+}
+
+@keyframes expand {
+    0%, 100% { transform: scaleX(1); opacity: 0.8; }
+    50% { transform: scaleX(1.2); opacity: 1; }
+}
