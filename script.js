@@ -89,4 +89,61 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-});
+
+
+
+
+// --- 1. CONFIGURATION ---
+const PUBLIC_KEY = "t9w2w4opFznvbPE_J";   
+const SERVICE_ID = "service_i6qdayr";   
+const TEMPLATE_ID = "template_dnbr30k"; 
+
+// --- 2. SELECT YOUR EXISTING ELEMENTS ---
+const inputField = document.getElementById('manna-email'); // Must match the ID of your input
+const joinButton = document.getElementById('manna-btn');   // Must match the ID of your button
+
+// Initialize EmailJS
+(function() {
+    emailjs.init(PUBLIC_KEY);
+})();
+
+// --- 3. THE LOGIC ---
+joinButton.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevents page reload
+
+    // Check if the user actually typed an email
+    if (!inputField.value.includes("@")) {
+        alert("Please enter a valid email address first!");
+        return;
+    }
+
+    // Change button text to show loading
+    const originalText = joinButton.innerText;
+    joinButton.innerText = "Sending...";
+
+    // Prepare data
+    const templateParams = {
+        user_email: inputField.value,
+    };
+
+    // Send email
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams)
+        .then(function() {
+            // Success
+            joinButton.innerText = "Welcome! 🍦";
+            joinButton.style.backgroundColor = "#4CAF50"; // Optional green success color
+            inputField.value = ""; // Clear the input
+            
+            // Optional: Reset button after 3 seconds
+            setTimeout(() => {
+                joinButton.innerText = originalText;
+            }, 3000);
+
+        }, function(error) {
+            // Error
+            console.log('FAILED...', error);
+            joinButton.innerText = "Try Again";
+            alert("Something went wrong. Please check your internet.");
+        });
+})});
+
